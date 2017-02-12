@@ -1,4 +1,4 @@
-# Ubersicht Widgets
+# Ubersicht_Widgets
 My widgets of Ubersicht 
 
 > 自己关于 Ubersicht 的插件配置文件夹，方便不同的机器同步
