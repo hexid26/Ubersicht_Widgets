@@ -3,24 +3,24 @@ command: "echo Hello World!",
 
 dayNames: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
 monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-offdayIndices: [6, 0], // Sa, Su
+offdayIndices: [5, 6], // Fr, Sa
  
-refreshFrequency: '2hrs',
+refreshFrequency: 5000,
 displayedDate: null,
 
-render: function () {
-  return "<div class=\"cal-container\">\
-  <div class=\"title\"></div>\
-  <table>\
-  <tr class=\"weekday\"></tr>\
-  <tr class=\"midline\"></tr>\
-  <tr class=\"date\"></tr>\
-  </table>\
-  </div>";
+render: function (output) {
+  return '<div class="cal-container">'
+  + '<div class=\"title\"></div>'
+  + '<table>'
+  + '<tr class=\"weekday\"></tr>'
+  + '<tr class=\"midline\"></tr>'
+  + '<tr class=\"date\"></tr>'
+  + '</table>'
+  + '</div>';
 },
  
 style: "                              \n\
-  bottom: 10px                          \n\
+  bottom: 10px                        \n\
   left: 470px                         \n\
   font-family: Helvetica Neue         \n\
   font-size: 12px                     \n\
@@ -29,14 +29,14 @@ style: "                              \n\
                                       \n\
   .cal-container                      \n\
     border-radius: 8px                \n\
-    background: rgba(#000, 0.5)       \n\
-    border:1px solid rgba(#FFFFFF, .5) \n\
-    padding: 5px                      \n\
+    background: rgba(#000, 0.6)       \n\
+    border:1px solid rgba(#ffffff, 1) \n\
+    padding: 6px                      \n\
                                       \n\
   .title                              \n\
-    color: rgba(#fa9a4f, 1)           \n\
-    font-size: 15px                   \n\
-    font-weight: 450                  \n\
+    color: rgba(#fff, .3)             \n\
+    font-size: 14px                   \n\
+    font-weight: 500                  \n\
     padding-bottom: 5px               \n\
     text-transform uppercase          \n\
                                       \n\
@@ -55,7 +55,7 @@ style: "                              \n\
     padding-bottom: 3px               \n\
                                       \n\
   .today, .off-today                  \n\
-    background: rgba(#fe0, 0.6)       \n\
+    background: rgba(#fff, 0.2)       \n\
                                       \n\
   .weekday .today,                    \n\
   .weekday .off-today                 \n\
@@ -67,13 +67,13 @@ style: "                              \n\
                                       \n\
   .midline                            \n\
     height: 3px                       \n\
-    background: rgba(#fff, .6)        \n\
+    background: rgba(#fff, .5)        \n\
                                       \n\
   .midline .today                     \n\
     background: rgba(#0bf, .8)        \n\
                                       \n\
   .midline .offday                    \n\
-    background: rgba(#f77, 1)        \n\
+    background: rgba(#f77, .5)        \n\
                                       \n\
   .midline .off-today                 \n\
     background: rgba(#fc3, .8)        \n\
