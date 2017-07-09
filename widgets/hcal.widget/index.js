@@ -3,7 +3,7 @@ command: "echo Hello World!",
 
 dayNames: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
 monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-offdayIndices: [5, 6], // Fr, Sa
+offdayIndices: [0, 6], // Su, Sa
  
 refreshFrequency: 5000,
 displayedDate: null,
@@ -55,7 +55,7 @@ style: "                              \n\
     padding-bottom: 3px               \n\
                                       \n\
   .today, .off-today                  \n\
-    background: rgba(#fff, 0.2)       \n\
+    background: rgba(#fff, 0.4)       \n\
                                       \n\
   .weekday .today,                    \n\
   .weekday .off-today                 \n\
