@@ -10,7 +10,7 @@
 command: ""
 
 # the refresh frequency in milliseconds
-refreshFrequency: 1000*60*5
+refreshFrequency: 1000*60*100
 
 # render gets called after the shell command has executed. The command's output
 # is passed in as a string. Whatever it returns will get rendered as HTML.
@@ -21,19 +21,19 @@ render: (output) -> """
 # the CSS style for this widget, written using Stylus
 # (http://learnboost.github.io/stylus/)
 style: """
-  background: rgba(#217, 0.35) url('wordcloud.widget/FeelGood.png') no-repeat 50% 0px
-  background-size: 1441px 1015px
-  -webkit-backdrop-filter: blur(20px)
-  border-radius: 1px
+  background: rgba(#000, 0.0) url('wordcloud.widget/FeelGood.png') no-repeat 50% 0px
+  background-size: 920px 546px
+  -webkit-backdrop-filter: blur(0px)
+  border-radius: 0px
   color: #ffffff
   font-family: Helvetica Neue
   font-weight: 300
-  left: 50%
+  left: 42%
   line-height: 1
-  margin-left: -720px
-  padding: 1015px 0px 0px
-  top: 10%
-  width: 1441px
+  margin-left: -273px
+  padding: 546px 0px 0px
+  top: 18%
+  width: 920px
   text-align: justify
 
   h1

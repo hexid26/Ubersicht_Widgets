@@ -21,11 +21,11 @@ render: (output) -> """
 # the CSS style for this widget, written using Stylus
 # (http://learnboost.github.io/stylus/)
 style: """
-  background: rgba(#217, 0.35) url('welcome.widget/Qrcode.jpg') no-repeat 50% 20px
-  background-size: 176px 176px
-  -webkit-backdrop-filter: blur(20px)
-  border-radius: 1px
-  border: 2px solid #700
+  background: rgba(#000, 0.3) url('welcome.widget/Qrcode.jpg') no-repeat 50% 20px
+  background-size: 150px 150px
+  -webkit-backdrop-filter: blur(10px)
+  border-radius: 0px
+  border: 0px solid #0aa
   box-sizing: border-box
   color: #ffffff
   font-family: Helvetica Neue
@@ -33,13 +33,13 @@ style: """
   left: 10px
   line-height: 1
   margin-left: 0px
-  padding: 200px 20px 20px
-  top: 20%
+  padding: 180px 20px 20px
+  top: 16%
   width: 340px
   text-align: justify
 
   h1
-    font-size: 30px
+    font-size: 25px
     font-weight: 300
     margin: 16px 0 8px
     color: #ff0000

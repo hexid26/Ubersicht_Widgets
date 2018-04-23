@@ -15,26 +15,22 @@ refreshFrequency: 1000000
 # render gets called after the shell command has executed. The command's output
 # is passed in as a string. Whatever it returns will get rendered as HTML.
 render: (output) -> """
-  <h1>Hi, #{output}</h1>
+  <h1>这里作为说明栏</h1>
   <p>
-    Thanks for trying out Übersicht!
-    This is an example widget to get you started.
+    在这里可以放置二维码
   </p>
   <p>
-    To view this example widget, choose <em>'Open Widgets Folder'</em>
-    from the status bar menu. Use it to create your own widget,
-    or simply delete it.
+    也可以放置近期活动说明
   </p>
   <p>
-    To download other widgets, choose <em>'Visit Widgets Gallery'</em>
-    from the status bar menu.
+    当做展示区域用吧
   </p>
 """
 
 # the CSS style for this widget, written using Stylus
 # (http://learnboost.github.io/stylus/)
 style: """
-  background: rgba(#fff, 0.95) url('übersicht-logo.png') no-repeat 50% 20px
+  background: rgba(#fff, 0.3) url('übersicht-logo.png') no-repeat 50% 20px
   background-size: 176px 84px
   -webkit-backdrop-filter: blur(20px)
   border-radius: 1px
@@ -43,11 +39,11 @@ style: """
   color: #141f33
   font-family: Helvetica Neue
   font-weight: 300
-  left: 50%
+  left: 10%
   line-height: 1.5
   margin-left: -170px
   padding: 120px 20px 20px
-  top: 10%
+  top: 15%
   width: 340px
   text-align: justify
 

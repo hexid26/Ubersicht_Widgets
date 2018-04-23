@@ -4,6 +4,7 @@ refreshFrequency: 10000
 
 style: """
   bottom: 94px
+  background: rgba(#000, 0.4)
   left: 10px
   color: #fff
   font-family: Helvetica Neue

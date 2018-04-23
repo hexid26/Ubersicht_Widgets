@@ -13,7 +13,7 @@ style: """
   color: rgb(#cf37c2)
   font-family: Helvetica Neue
   left: 10px
-  top: 60px
+  top: 75px
 
   h1
     font-size: 42pt
